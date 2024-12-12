@@ -1,7 +1,13 @@
-import type { NextConfig } from "next";
+import { NextConfig } from 'next'
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+const config: NextConfig = {
+  images: {
+    domains: [
+      'via.placeholder.com',  // Add any other domains here as needed
+      'google.com',
+      'i.redd.it',
+    ],
+  },
+}
 
-export default nextConfig;
+export default config
